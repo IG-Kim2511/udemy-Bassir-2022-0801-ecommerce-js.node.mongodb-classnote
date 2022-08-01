@@ -33,6 +33,18 @@
         (뒤에 설명)
      -->
 
+     <!-- 
+
+        🦄🦄04 Create-Static-HomeScreen, flex
+            flex-grow: 0
+            flex-shrink : 1
+            flex-basis: 30rem
+
+            maximum width for each product = 300px
+
+
+      -->
+
     <div class="grid-container">
         <header>
           <div class="brand">
@@ -44,7 +56,26 @@
           </div>
         </header>
         <main>
-          Products List
+           <div>
+            <ul class="products">
+                <li>
+                    <a href="/#/product/1">
+                        <img src="/images/product-1.jpg" alt="product 1">
+                    </a>
+                    <div class="product-name">
+                        <a href="/#/product/1">
+                            fit slim shirt
+                        </a>
+                    </div>
+                    <div class="product-brand">
+                        nike
+                    </div>
+                    <div class="product-price">
+                        $59
+                    </div>
+                </li>
+            </ul>
+           </div>
         </main>
         <footer>
           All rights reserved @2020
