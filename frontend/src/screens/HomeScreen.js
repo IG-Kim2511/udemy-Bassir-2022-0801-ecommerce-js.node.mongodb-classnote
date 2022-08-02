@@ -1,127 +1,50 @@
 
 //🍀c05 리액트 컴포넌트처럼 첫글자 대문자
 
-// 🍀c06.../data.js'
+// 🍀c05.../data.js'
 import data from '../data.js'
+
+/* 🍀c05. <render method>
+
+    const ~~~ ={
+
+    render : () => {
+        
+        return `~~~~~`
+    }
+
+    }
+*/
+
 
 const HomeScreen = {
     render:()=>{
 
-        // 🍀c06. const {변수}  (const 변수 x)
+        // 🍀c05. const {변수}  (const 변수 x)
         const {products} = data;
 
+        // 🍀c05.map(~)
         return `
             <ul class ='products'>
                 ${products.map(p_product =>`
                     <li>
                         <div class="product">
-                        <a href="/#/product/1">
-                            <img src="/images/product-1.jpg" alt="product 1" />
+                        <a href="/#/product/${p_product._id}">
+                            <img src="${p_product.image}" alt="${p_product.name}" />
                         </a>
                         <div class="product-name">
                             <a href="/#/product/1">
-                            Fit Slim Shirt
+                             ${p_product.name}
                             </a>
                         </div>
                         <div class="product-brand">
-                            Nike
+                             ${p_product.brand}
                         </div>
                         <div class="product-price">
-                            $59
+                             $${p_product.price}
                         </div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="product">
-                        <a href="/#/product/1">
-                            <img src="/images/product-1.jpg" alt="product 1" />
-                        </a>
-                        <div class="product-name">
-                            <a href="/#/product/1">
-                            Fit Slim Shirt
-                            </a>
-                        </div>
-                        <div class="product-brand">
-                            Nike
-                        </div>
-                        <div class="product-price">
-                            $59
-                        </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="product">
-                        <a href="/#/product/1">
-                            <img src="/images/product-1.jpg" alt="product 1" />
-                        </a>
-                        <div class="product-name">
-                            <a href="/#/product/1">
-                            Fit Slim Shirt
-                            </a>
-                        </div>
-                        <div class="product-brand">
-                            Nike
-                        </div>
-                        <div class="product-price">
-                            $59
-                        </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="product">
-                        <a href="/#/product/1">
-                            <img src="/images/product-1.jpg" alt="product 1" />
-                        </a>
-                        <div class="product-name">
-                            <a href="/#/product/1">
-                            Fit Slim Shirt
-                            </a>
-                        </div>
-                        <div class="product-brand">
-                            Nike
-                        </div>
-                        <div class="product-price">
-                            $59
-                        </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="product">
-                        <a href="/#/product/1">
-                            <img src="/images/product-1.jpg" alt="product 1" />
-                        </a>
-                        <div class="product-name">
-                            <a href="/#/product/1">
-                            Fit Slim Shirt
-                            </a>
-                        </div>
-                        <div class="product-brand">
-                            Nike
-                        </div>
-                        <div class="product-price">
-                            $59
-                        </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="product">
-                        <a href="/#/product/1">
-                            <img src="/images/product-1.jpg" alt="product 1" />
-                        </a>
-                        <div class="product-name">
-                            <a href="/#/product/1">
-                            Fit Slim Shirt
-                            </a>
-                        </div>
-                        <div class="product-brand">
-                            Nike
-                        </div>
-                        <div class="product-price">
-                            $59
-                        </div>
-                        </div>
-                    </li>
-                
+                    </li>                    
                 `)}
             </ul>
             
