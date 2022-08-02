@@ -1,13 +1,7 @@
 
-//🍀05 리액트 컴포넌트처럼 첫글자 대문자
+//🍀c05 리액트 컴포넌트처럼 첫글자 대문자
 
-
-// const HomeScreen = () => {
-//   return (
-//     <div>HomeScreen</div>
-//   )
-// }
-
+// 🍀c06.../data.js'
 import data from '../data.js'
 
 const HomeScreen = {
@@ -17,117 +11,116 @@ const HomeScreen = {
         const {products} = data;
 
         return `
-
             <ul class ='products'>
                 ${products.map(p_product =>`
-                <li>
-                <div class="product">
-                <a href="/#/product/1">
-                    <img src="/images/product-1.jpg" alt="product 1" />
-                </a>
-                <div class="product-name">
-                    <a href="/#/product/1">
-                    Fit Slim Shirt
-                    </a>
-                </div>
-                <div class="product-brand">
-                    Nike
-                </div>
-                <div class="product-price">
-                    $59
-                </div>
-                </div>
-            </li>
-            <li>
-                <div class="product">
-                <a href="/#/product/1">
-                    <img src="/images/product-1.jpg" alt="product 1" />
-                </a>
-                <div class="product-name">
-                    <a href="/#/product/1">
-                    Fit Slim Shirt
-                    </a>
-                </div>
-                <div class="product-brand">
-                    Nike
-                </div>
-                <div class="product-price">
-                    $59
-                </div>
-                </div>
-            </li>
-            <li>
-                <div class="product">
-                <a href="/#/product/1">
-                    <img src="/images/product-1.jpg" alt="product 1" />
-                </a>
-                <div class="product-name">
-                    <a href="/#/product/1">
-                    Fit Slim Shirt
-                    </a>
-                </div>
-                <div class="product-brand">
-                    Nike
-                </div>
-                <div class="product-price">
-                    $59
-                </div>
-                </div>
-            </li>
-            <li>
-                <div class="product">
-                <a href="/#/product/1">
-                    <img src="/images/product-1.jpg" alt="product 1" />
-                </a>
-                <div class="product-name">
-                    <a href="/#/product/1">
-                    Fit Slim Shirt
-                    </a>
-                </div>
-                <div class="product-brand">
-                    Nike
-                </div>
-                <div class="product-price">
-                    $59
-                </div>
-                </div>
-            </li>
-            <li>
-                <div class="product">
-                <a href="/#/product/1">
-                    <img src="/images/product-1.jpg" alt="product 1" />
-                </a>
-                <div class="product-name">
-                    <a href="/#/product/1">
-                    Fit Slim Shirt
-                    </a>
-                </div>
-                <div class="product-brand">
-                    Nike
-                </div>
-                <div class="product-price">
-                    $59
-                </div>
-                </div>
-            </li>
-            <li>
-                <div class="product">
-                <a href="/#/product/1">
-                    <img src="/images/product-1.jpg" alt="product 1" />
-                </a>
-                <div class="product-name">
-                    <a href="/#/product/1">
-                    Fit Slim Shirt
-                    </a>
-                </div>
-                <div class="product-brand">
-                    Nike
-                </div>
-                <div class="product-price">
-                    $59
-                </div>
-                </div>
-            </li>
+                    <li>
+                        <div class="product">
+                        <a href="/#/product/1">
+                            <img src="/images/product-1.jpg" alt="product 1" />
+                        </a>
+                        <div class="product-name">
+                            <a href="/#/product/1">
+                            Fit Slim Shirt
+                            </a>
+                        </div>
+                        <div class="product-brand">
+                            Nike
+                        </div>
+                        <div class="product-price">
+                            $59
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product">
+                        <a href="/#/product/1">
+                            <img src="/images/product-1.jpg" alt="product 1" />
+                        </a>
+                        <div class="product-name">
+                            <a href="/#/product/1">
+                            Fit Slim Shirt
+                            </a>
+                        </div>
+                        <div class="product-brand">
+                            Nike
+                        </div>
+                        <div class="product-price">
+                            $59
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product">
+                        <a href="/#/product/1">
+                            <img src="/images/product-1.jpg" alt="product 1" />
+                        </a>
+                        <div class="product-name">
+                            <a href="/#/product/1">
+                            Fit Slim Shirt
+                            </a>
+                        </div>
+                        <div class="product-brand">
+                            Nike
+                        </div>
+                        <div class="product-price">
+                            $59
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product">
+                        <a href="/#/product/1">
+                            <img src="/images/product-1.jpg" alt="product 1" />
+                        </a>
+                        <div class="product-name">
+                            <a href="/#/product/1">
+                            Fit Slim Shirt
+                            </a>
+                        </div>
+                        <div class="product-brand">
+                            Nike
+                        </div>
+                        <div class="product-price">
+                            $59
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product">
+                        <a href="/#/product/1">
+                            <img src="/images/product-1.jpg" alt="product 1" />
+                        </a>
+                        <div class="product-name">
+                            <a href="/#/product/1">
+                            Fit Slim Shirt
+                            </a>
+                        </div>
+                        <div class="product-brand">
+                            Nike
+                        </div>
+                        <div class="product-price">
+                            $59
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product">
+                        <a href="/#/product/1">
+                            <img src="/images/product-1.jpg" alt="product 1" />
+                        </a>
+                        <div class="product-name">
+                            <a href="/#/product/1">
+                            Fit Slim Shirt
+                            </a>
+                        </div>
+                        <div class="product-brand">
+                            Nike
+                        </div>
+                        <div class="product-price">
+                            $59
+                        </div>
+                        </div>
+                    </li>
                 
                 `)}
             </ul>
