@@ -57,3 +57,22 @@ const HomeScreen = {
 
 
 export default HomeScreen;
+
+
+
+const ~~~ ={
+
+    render : () => {
+        
+        return `~~~~~`
+    }
+
+}
+
+
+const HomeScreen = () => {
+  return (
+    <div>HomeScreen</div>
+  )
+}
+
