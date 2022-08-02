@@ -8,4 +8,5 @@ const router =()=>{
     main.innerHTML = HomeScreen.render();
 }
 
+// addEventListener('load',~)
 window.addEventListener('load',router);

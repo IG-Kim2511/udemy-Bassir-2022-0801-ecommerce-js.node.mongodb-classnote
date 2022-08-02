@@ -27,28 +27,30 @@ const HomeScreen = {
         return `
             <ul class ='products'>
                 ${products.map(p_product =>`
-                    <li>
-                        <div class="product">
-                        <a href="/#/product/${p_product._id}">
-                            <img src="${p_product.image}" alt="${p_product.name}" />
-                        </a>
-                        <div class="product-name">
-                            <a href="/#/product/1">
-                             ${p_product.name}
+                        <li>
+                            <div class="product">
+                            <a href="/#/product/${p_product._id}">
+                                <img src="${p_product.image}" alt="${p_product.name}" />
                             </a>
-                        </div>
-                        <div class="product-brand">
-                             ${p_product.brand}
-                        </div>
-                        <div class="product-price">
-                             $${p_product.price}
-                        </div>
-                        </div>
-                    </li>                    
-                `)}
+                            <div class="product-name">
+                                <a href="/#/product/1">
+                                ${p_product.name}
+                                </a>
+                            </div>
+                            <div class="product-brand">
+                                ${p_product.brand}
+                            </div>
+                            <div class="product-price">
+                                $${p_product.price}
+                            </div>
+                            </div>
+                        </li>                    
+                    `)
+                    // 🍀c05. .join(~) , array안 items사이마다 ~~넣음. 
+                    // \n : enter키 의미
+                    .join('\n')
+                }   
             </ul>
-            
-            <h1>hello</h1>
         `
     }
 }
